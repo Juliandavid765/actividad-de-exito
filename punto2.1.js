@@ -7,13 +7,12 @@ function escuchar(){
     console.log(producto)
     let edad=document.getElementById("Edad").value
     console.log (edad)
-    let cantidad=document.getElementById("Cantidad").value
+    let cantidad=document.getElementById("cantidad").value
     console.log(cantidad)
-    alert("el precio es " + (producto*cantidad))
-}
-if (edad>=18){
-    alert("usted puede comprar")
-
-}else{
-    alert("usted no puede comprar")
+    if (edad>=18){
+        alert("usted puede comprar")
+        alert("el precio es " + (producto*cantidad))
+    }else{
+        alert("usted no puede comprar")
+    }
 }
